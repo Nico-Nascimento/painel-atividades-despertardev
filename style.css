@@ -40,6 +40,15 @@ body {
     }
 }
 
+.home a{
+    text-decoration: none;
+    color: white;
+}
+
+.home a:hover {
+    color: #047bcf;
+}
+
 .card-header {
     font-size: 1.5rem;
 }
