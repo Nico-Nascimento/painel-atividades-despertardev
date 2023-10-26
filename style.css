@@ -63,6 +63,8 @@ body {
 }
 
 .card-img-top {
+    max-width: 50rem;
+    max-height: 25rem;
     border: 1px solid #07001c;
 }
 
