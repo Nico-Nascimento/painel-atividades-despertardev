@@ -1,0 +1,31 @@
+<script>
+
+// 2. Desenvolva um aplicativo que leia o salário e o sexo de vários
+// funcionários. No final, mostre o total de salários pagos aos homens e
+// o total pago às mulheres. O programa vai perguntar ao usuário se
+// ele quer continuar ou não sempre que ler os dados de um
+// funcionário.
+
+alert("2. Desenvolva um aplicativo que leia o salário e o sexo de vários funcionários. No final, mostre o total de salários pagos aos homens e o total pago às mulheres. O programa vai perguntar ao usuário se ele quer continuar ou não sempre que ler os dados de um funcionário.");
+
+document.write("<br/> <br/> <strong>Exercicio 2</strong> <br/>");
+
+let salarioHomens = 0;
+let salarioMulheres = 0;
+continuar = true;
+
+while (continuar) {
+    salario = Number(prompt ("Qual o salário?"));
+    sexo = prompt("O salário é pago a um homem ou a uma mulher?")
+    if (sexo === "homem") {
+        salarioHomens += salario;
+    } else if (sexo === "mulher") {
+        salarioMulheres += salario;
+    }
+    continuar = confirm ("Deseja continuar?")
+} 
+
+document.write(`<br/> <br/> O salário pago aos homens é de R$ ${salarioHomens}`)
+document.write(`<br/> O salário pago as mulheres é de R$ ${salarioMulheres}`)
+
+</script>

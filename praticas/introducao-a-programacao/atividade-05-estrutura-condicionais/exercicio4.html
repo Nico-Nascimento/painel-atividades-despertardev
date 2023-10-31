@@ -1,0 +1,28 @@
+<script>
+
+// 4. Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar
+// descontos para todos, mas especialmente para mulheres. Faça um
+// programa que leia nome, sexo e o valor das compras do cliente e
+// calcule o preço com desconto. Sabendo que:
+// a. Homens ganham 5% de desconto
+// b. Mulheres ganham 13% de desconto
+
+alert("4. Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos para todos, mas especialmente para mulheres. Faça um programa que leia nome, sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo que: a. Homens ganham 5% de desconto b. Mulheres ganham 13% de desconto")
+
+document.write("<br/> <br/> <strong>Exercicio 4</strong> <br/>");
+
+const nome = prompt("Digite seu nome: ");
+const genero = prompt("Digite F para feminino ou M para masculino: ");
+let valorCompra = Number(prompt("Digite o valor da compra: "));
+
+if (genero === "F") {
+    valorCompra = valorCompra * 0.87;
+} else if (genero === "M") {
+    valorCompra = valorCompra * 0.95;
+} else {
+    alert("Caracter inválido!")
+}
+
+document.write(`O valor final da comprar ficou R$ ${valorCompra}`)
+
+</script>

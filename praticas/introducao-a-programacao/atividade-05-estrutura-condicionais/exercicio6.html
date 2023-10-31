@@ -1,0 +1,27 @@
+<script>
+
+// 6. Faça um programa que leia a largura e o comprimento de um
+// terreno retangular, calculando e mostrando a sua área em m2. O
+// programa também deve mostrar a classificação desse terreno, de
+// acordo com a lista abaixo:
+// Abaixo de 100m2 = TERRENO POPULAR
+// Entre 100m2 e 500m2 = TERRENO MASTER
+// Acima de 500m2 = TERRENO VIP
+
+alert("6. Faça um programa que leia a largura e o comprimento de um terreno retangular, calculando e mostrando a sua área em m2. O programa também deve mostrar a classificação desse terreno, de acordo com a lista abaixo: Abaixo de 100m2 = TERRENO POPULAR Entre 100m2 e 500m2 = TERRENO MASTER Acima de 500m2 = TERRENO VIP")
+
+document.write("<br/> <br/> <strong>Exercicio 6</strong> <br/>");
+
+let larguraT = Number(prompt("Digite a largura do terreno"))
+  let comprimentoT = Number(prompt("Digite o comprimento do terreno"))
+  let resultT = larguraT * comprimentoT;
+
+  if (resultT < 100) {
+    document.write("Terreno popular")
+  } else if (resultT >= 100 && resultT <= 500) {
+    document.write("Terreno Master")
+  } else {
+    document.write("Terreno VIP")
+  }
+
+</script>

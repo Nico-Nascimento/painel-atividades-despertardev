@@ -1,0 +1,26 @@
+<script>
+
+// 1. Faça um algoritmo que leia a idade de vários alunos de uma turma.
+// O programa vai parar quando for digitada a idade 999. No final,
+// mostre quantos alunos existem na turma e qual é a média de idade
+// do grupo.
+
+alert(" 1. Faça um algoritmo que leia a idade de vários alunos de uma turma. O programa vai parar quando for digitada a idade 999. No final, mostre quantos alunos existem na turma e qual é a média de idade do grupo.")
+
+document.write("<br/> <br/> <strong>Exercicio 1</strong> <br/>")
+
+let idade = 0;
+let contador = 0;
+let totalIdade = 0;
+
+while (idade !== 999) {
+    idade = Number(prompt("Digite sua idade: "));
+    if (idade !== 999) {
+        totalIdade += idade;
+        contador++;
+    }
+}
+document.write(`<br/> Média: ${(totalIdade / contador).toFixed(2)}`)
+document.write(`<br/> Total de alunos: ${contador}`)
+
+</script>

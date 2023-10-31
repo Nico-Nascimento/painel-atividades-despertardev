@@ -45,7 +45,8 @@ while ( valorSaque >= 5) {
     valorSaque -= 5;
     gc5++;
     
-} while ( valorSaque >= 1) {
+} 
+while ( valorSaque >= 1) {
     valorSaque -= 1;
     gc1++;
 }
