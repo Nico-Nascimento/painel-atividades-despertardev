@@ -1,0 +1,30 @@
+<script>
+
+// 18. Uma loja de eletrodomésticos estabeleceu as seguintes
+// modalidades de pagamento para a venda de suas mercadorias:
+// Escreva um algoritmo que armazene o preço de tabela e o número
+// de vezes em que o pagamento será feito. Calcule o valor de cada
+// parcela e o preço total da compra e imprima no console.
+
+alert("18. Uma loja de eletrodomésticos estabeleceu as seguintes modalidades de pagamento para a venda de suas mercadorias: Escreva um algoritmo que armazene o preço de tabela e o número de vezes em que o pagamento será feito. Calcule o valor de cada parcela e o preço total da compra e imprima no console.")
+
+document.write("<br/> <br/> <strong>Exercicio 18</strong> <br/>");
+
+let precoTabela = Number(prompt("Digite o preço de tabela: "));
+let numeroPagamentos = Number(prompt("Digite o número de vezes do pagamento: "));
+
+let precoFinal;
+
+if (numeroPagamentos == 1) {
+    precoFinal = precoTabela * (1 - 0.025);
+} else if (numeroPagamentos >= 2 && numeroPagamentos <= 5) {
+    precoFinal = precoTabela;
+} else if (numeroPagamentos >= 6 && numeroPagamentos <= 10) {
+    precoFinal = precoTabela * (1 + 0.13);
+} else {
+    document.write("Número de pagamentos inválido.");
+}
+
+document.write(`Preço final: ${precoFinal}`);
+
+</script>

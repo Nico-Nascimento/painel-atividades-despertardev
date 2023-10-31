@@ -1,0 +1,35 @@
+<script>
+
+// 9. Informe um valor a uma variável e imprima no console se o número
+// é primo.
+
+alert("9. Informe um valor a uma variável e imprima no console se o número é primo.")
+
+document.write("<br/> <br/> <strong>Exercicio 9</strong> <br/>")
+
+const numero = Number(prompt("Digite o número que deseja verificar: "));
+
+if (numero <= 1) {
+    document.write(`${numero} não é primo.`);
+} else if (numero <= 3) {
+    document.write(`${numero} é primo.`);
+} else if (numero % 2 === 0 || numero % 3 === 0) {
+    document.write(`${numero} não é primo.`);
+} else {
+    let primo = true;
+    for (var i = 5; i * i <= numero; i += 6) {
+        if (numero % i === 0 || numero % (i + 2) === 0) {
+            primo = false;
+            break;
+        }
+    }
+    
+    if (primo) {
+        document.write(`${numero} é primo.`);
+    } else {
+        document.write(`${numero} não é primo.`);
+    }
+}
+
+
+</script>

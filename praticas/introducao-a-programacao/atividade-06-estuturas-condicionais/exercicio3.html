@@ -1,0 +1,33 @@
+<script>
+
+// 3. Utilizando o IF, ELSE, ELSE IF crie uma estrutura para receber um
+// número de 1 a 7 e imprimir no console o dia da Semana. Para este
+// exercício assumimos que o dia 1 é Domingo, dia 2 é segunda e assim
+// por diante. Caso o número recebido não esteja neste intervalo
+// imprimir “Dia não reconhecido”.
+
+alert("3. Utilizando o IF, ELSE, ELSE IF crie uma estrutura para receber um número de 1 a 7 e imprimir no console o dia da Semana. Para este exercício assumimos que o dia 1 é Domingo, dia 2 é segunda e assim por diante. Caso o número recebido não esteja neste intervalo imprimir “Dia não reconhecido”.")
+
+document.write("<br/> <br/> <strong>Exercicio 3</strong> <br/>");
+
+const numeroDia = Number(prompt("Digite um número de 1 a 7 para o dia da semana:"));
+
+if (numeroDia === 1) {
+    document.write("O dia da semana é Domingo");
+} else if (numeroDia === 2) {
+    document.write("O dia da semana é Segunda-feira");
+} else if (numeroDia === 3) {
+    document.write("O dia da semana é Terça-feira");
+} else if (numeroDia === 4) {
+    document.write("O dia da semana é Quarta-feira");
+} else if (numeroDia === 5) {
+    document.write("O dia da semana é Quinta-feira");
+} else if (numeroDia === 6) {
+    document.write("O dia da semana é Sexta-feira");
+} else if (numeroDia === 7) {
+    document.write("O dia da semana é Sábado");
+} else {
+    document.write("Dia não reconhecido");
+}
+
+</script>

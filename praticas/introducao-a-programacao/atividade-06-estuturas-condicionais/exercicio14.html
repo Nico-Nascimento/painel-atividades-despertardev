@@ -1,0 +1,22 @@
+<script>
+
+// 14. Leia um número, utilizando WHILE multiplique este número por 3
+// enquanto a soma seja menor que 500 e no final mostre qual o
+// último valor
+
+alert("14. Leia um número, utilizando WHILE multiplique este número por 3 enquanto a soma seja menor que 500 e no final mostre qual o último valor")
+
+document.write("<br/> <br/> <strong>Exercicio 14</strong> <br/>");
+
+let numero = Number(prompt("Digite um número: "));
+let soma = 0;
+let ultimoValor = numero;
+
+while (soma < 500) {
+  ultimoValor = ultimoValor * 3;
+  soma += ultimoValor;
+}
+
+document.write(`O último valor multiplicado por 3 é: ${ultimoValor}`);
+
+</script>

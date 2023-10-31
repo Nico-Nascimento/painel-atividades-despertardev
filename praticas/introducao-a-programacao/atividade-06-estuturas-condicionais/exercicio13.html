@@ -1,0 +1,18 @@
+<script>
+
+// 13. Faça um algoritmo que armazene um número e imprima os
+// números ímpares entre 1 e o número armazenado.
+
+alert("13. Faça um algoritmo que armazene um número e imprima os números ímpares entre 1 e o número armazenado.")
+
+document.write("<br/> <br/> <strong>Exercicio 13</strong> <br/>");
+
+const numero = parseInt(prompt("Digite um número inteiro: "));
+
+for (let impares = 1; impares <= numero; impares++) {
+    if (impares % 2 !== 0) {
+        document.write(`<li> ${impares} </li>`)
+    }
+}
+
+</script>

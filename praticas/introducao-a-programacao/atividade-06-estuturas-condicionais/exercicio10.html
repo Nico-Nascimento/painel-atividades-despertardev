@@ -1,0 +1,28 @@
+<script>
+
+// 10. Tendo como entrada a altura e o sexo (codificado da seguinte
+// forma: 1 para sexo feminino e 2 para sexo masculino) de uma
+// pessoa, construa um programa que calcule e mostre seu peso ideal,
+// utilizando as seguintes fórmulas:
+// - para homens: (72.7 * Altura) – 58
+// - para mulheres: (62.1 * Altura) – 44.7
+
+alert("10. Tendo como entrada a altura e o sexo (codificado da seguinte forma: 1 para sexo feminino e 2 para sexo masculino) de uma pessoa, construa um programa que calcule e mostre seu peso ideal, utilizando as seguintes fórmulas: - para homens: (72.7 * Altura) – 58 - para mulheres: (62.1 * Altura) – 44.7");
+
+document.write("<br/> <br/> <strong>Exercicio 10</strong> <br/>")
+
+const altura = Number(prompt("Digite a altura da pessoa (em metros):"));
+const sexo = Number(prompt("Digite o sexo (1 para feminino, 2 para masculino):"));
+let pesoIdeal;
+
+if (sexo === 1) {
+    pesoIdeal = (62.1 * altura) - 44.7;
+    document.write(`O peso ideal para uma mulher com altura de ${altura} metros é: ${pesoIdeal.toFixed(2)} kg`);
+} else if (sexo === 2) {
+    pesoIdeal = (72.7 * altura) - 58;
+    document.write(`O peso ideal para um homem com altura de ${altura} metros é: ${pesoIdeal.toFixed(2)} kg`);
+} else {
+    document.write("Sexo não reconhecido. Use 1 para feminino e 2 para masculino.");
+}
+
+</script>
