@@ -29,7 +29,7 @@ body {
 .sub-title {
     text-align: center;
     margin-bottom: 2rem;
-    background: linear-gradient(45deg, #ffffff, #8cb2f9, #d68cf9, #ffffff);
+    background: linear-gradient(45deg, #7E63B7, #41C269, #EC6EB0, #7E63B7);
     background-size: 400% 100%;
     animation: degrade 20s linear infinite alternate;
     -webkit-background-clip: text;
@@ -53,7 +53,7 @@ body {
 }
 
 .home a:hover {
-    color: #047bcf;
+    color: #BFC670;
 }
 
 .card-header {
