@@ -1,0 +1,25 @@
+<script>
+// 3. Desenvolva um algoritmo que preenche um vetor com os 4
+// primeiros números perfeitos.
+
+alert("3. Desenvolva um algoritmo que preenche um vetor com os 4 primeiros números perfeitos.")
+
+document.write("<br/> <br/> <strong>Exercicio 3</strong> <br/> <br/>");
+
+let numPer = [];
+
+for (let num = 1; numPer.length < 4; num++) {
+    let soma = 0;
+    for (let i = 1; i < num; i++) {
+        if (num % i === 0) {
+            soma += i;
+        }
+    }
+    if (soma == num) {
+        numPer.push(soma);
+    }
+}
+
+document.write(numPer);
+
+</script>
